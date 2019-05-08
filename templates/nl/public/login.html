@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Login</title>
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<link rel="stylesheet" href="/css/retina.css" type="text/css" />
+	<link rel="stylesheet" href="/css/kube.css" type="text/css" />
+	<link rel="stylesheet" href="/css/finalcms.css" type="text/css" />
+	<script src="/js/md5.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" media="all and (min-width: 1001px)" href="/css/finalcms-grid1001.css">
+	<link rel="stylesheet" media="all and (max-width: 1001px)" href="/css/finalcms-grid768.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/finalcms-grid768.css">
+	<![endif]-->
+	
+</head>
+<body>
+
+<div id="page">
+	<div class="loginForm">
+		<h3 class="finalcms">Aanmelden</h3>
+		<form id="signIn" method="post" title="bezig met aanmelden" class="forms">
+			<ul>
+		       <li>
+		           <input type="text" name="username" id="username" placeholder="gebruikersnaam" class="edit validate[required] width-100 focus" />
+		       </li>
+				<li>
+				    <input type="password" name="password" id="password" placeholder="wachtwoord" class="edit validate[required] width-100" />
+				</li>
+				<li>
+					<input class="fancy-checkbox" type="checkbox" name="remember" id="remember" value="on" /> <span class="descr white"> gegevens onthouden</span>
+				</li>
+				<li>&nbsp;</li>
+				<li>
+					<button id="submit" class="btn send">Aanmelden</button> <button id="cancel" class="btn push-right" rel="/nl/passwordReset">wachtwoord?</button>  
+				</li>
+				<li></li>
+			</ul>
+				
+		</form>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>

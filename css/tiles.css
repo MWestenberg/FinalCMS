@@ -1,0 +1,135 @@
+/*structure*/
+	* { font-family: Helvetica, Arial; }
+	
+	
+	.span4 {
+	width: 228px;
+	}
+	
+	[class*="span"] {
+	float: left;
+	margin-left: 20px;
+	}
+	
+	/*targeting and animation*/
+	
+	#pitchdeck-controls {  
+	padding:2em;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-transition-timing-function: ease-in-out;
+	-moz-transform: translate(0,0);
+	-moz-transition-timing-function: ease-in-out;
+	}
+	
+	#tilesRow1,#tilesRow2,#tilesRow3 {
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-perspective: 800px;
+	-moz-transform: translate(0,0);
+	-moz-perspective: 800px;
+	-webkit-transition: 300ms;
+	width: 600px!important;
+	}
+	
+	.leftRotate{
+	-webkit-transform: translate3d(0,0,0) rotateY(-90deg); 
+	    opacity:0;
+	}
+	
+	.rightRotate{
+	 -webkit-transformation:translate3d(0,0,0) rotateY(0deg);   
+	    opacity:1;
+	}
+	
+	
+	
+	
+	
+	p.tile-meta {  
+	position: absolute;
+	left: 8px;
+	bottom: 5px;
+	margin: 0;
+	padding: 0;
+	}
+	
+	.tile { 
+	background-color: #1ba1e1;
+	color:  #fff;
+	height: 109px;
+	width: 109px;
+	margin-bottom: 10px;
+	position: relative;
+
+	}
+	
+	#tile1 { 
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 0ms;
+	}
+	#tile2 {  
+	-webkit-transform-origin-x: -130px;
+	-webkit-transition: 300ms 80ms;
+	}
+	#tile3 {  
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 160ms;
+	}
+	#tile4 {  
+	-webkit-transform-origin-x: -130px;
+	-webkit-transition: 300ms 240ms;
+	}
+	#tile5 {  
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 320ms;
+	}
+	#tile6 { 
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 0ms;
+	}
+	#tile7 {  
+	-webkit-transform-origin-x: -130px;
+	-webkit-transition: 300ms 80ms;
+	}
+	#tile8 {  
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 160ms;
+	}
+	#tile9 {  
+	-webkit-transform-origin-x: -130px;
+	-webkit-transition: 300ms 240ms;
+	}
+	#tile10 {  
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 320ms;
+	}
+		
+	#tile11 { 
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 0ms;
+	}
+	#tile12 {  
+	-webkit-transform-origin-x: -130px;
+	-webkit-transition: 300ms 80ms;
+	}
+	#tile13 {  
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 160ms;
+	}
+	#tile14 {  
+	-webkit-transform-origin-x: -130px;
+	-webkit-transition: 300ms 240ms;
+	}
+	#tile15 {  
+	-webkit-transform-origin-x: -8px;
+	-webkit-transition: 300ms 320ms;
+	}
+	
+	
+	.tile:hover {
+		-webkit-transform: scale(0.97);
+		-moz-transform: scale(0.97);
+		-ms-transform: scale(0.97);
+		transform: scale(0.97);
+		
+	}
+	

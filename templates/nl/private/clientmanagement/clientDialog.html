@@ -1,0 +1,22 @@
+<form id="customerdialog" class="dialogForm">
+	<input type="hidden" name="id" id="id" value="" />
+	<div><h3 class="formTitle">Klant aanmaken</h3></div>
+	
+	<div style="position: relative;width: 100%;height: 100%;">
+	<div><span class="formText">Naam</span><input type="text" id="name" name="name" value="" placeholder="naam klant" class="edit" /></div>
+	<div><span class="formText">Straat</span><input type="text" id="address" name="address" value="" placeholder="Straat" class="edit" /></div>
+	<div><span class="formText">Huisnummer</span><input type="text" id="streetnumber" name="streetnumber" value="" placeholder="huisnummer" class="edit validate[required,custom[onlyLetterNumber]]" /></div>
+	<div><span class="formText">Postcode</span><input type="text" id="zipcode" name="zipcode" value="" placeholder="Postcode" class="edit  validate[required,custom[postcode]]" /></div>
+	<div><span class="formText">Plaats</span><input type="text" id="city" name="city" value="" placeholder="Plaats" class="edit  validate[required]" /></div>
+	<div><span class="formText">Postbus</span><input type="text" id="pobox" name="pobox" value="" placeholder="Postbus" class="edit validate[condRequired[pobox_city],custom[onlyNumberSp]]" /></div>
+	<div><span class="formText">Postcode</span><input type="text" id="pobox_zipcode" name="pobox_zipcode" value="" placeholder="Postbus postcode" class="edit validate[condRequired[pobox],custom[postcode]]" /></div>
+	<div><span class="formText">Plaats</span><input type="text" id="pobox_city" name="pobox_city" value="" placeholder="Postbus plaats" class="edit validate[condRequired[pobox_zipcode]]" /></div>
+		
+	<div><span class="formText">E-mailadres</span><input type="text" id="email" name="email" value="" placeholder="E-mailadres" class="edit validate[required,custom[email]]" /></div>
+	<div><span class="formText">Telefoonnummer</span><input type="text" id="phone" name="phone" value="" placeholder="Telefoonnummer" class="edit validate[custom[phone]] " /></div>
+	<div><span class="formText">Status</span><input class="fancy-checkbox" type="checkbox" name="state" id="state" value="active" checked/></div>	
+	<div class="buttons"><input type="button" class="close button" name="cancel" id="cancel" value="annuleren" /> <input type="submit" class="button send" name="storeCustomer" id="storeCustomer" value="opslaan" /></div>
+	</div>
+</form>
+
+ 

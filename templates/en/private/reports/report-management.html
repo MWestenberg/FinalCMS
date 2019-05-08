@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title></title>
+	
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<tpl>ckeditor</tpl>
+	<tpl>style</tpl>
+	
+</head>
+<body>
+<div id="wrapper">
+		<div id="lefthandMenu">
+			
+			<div id="profileMenu">
+				
+				<div class="row">
+				    <div class="quarter"><php>openView.getAvatar()</php></div>
+				   <div class="threequarter ">
+				   	<span class="offWhite big"><php>openView.getCustomerName()</php></span><br/>
+				   	<span class="finalCMSMenu"><a href="/secure/account">Account settings</a> // <a href="/signout" id="signout">sign out</a></span>
+				   </div>
+				</div>
+				
+			</div>
+			<div class="smallMargin">
+				
+				<div class="row">
+					<div class="quarter"></div>
+					<div class="threequarter gray">
+						<div class="menuItem"><a href="/secure/start">start</a></div>
+						<tpl>getParentMenu</tpl>
+					</div>
+				</div>
+			</div>
+			<div class="smallMargin">
+				<div class="row">
+				    <div class="quarter"></div>
+				   <div class="threequarter offWhite">Manage your reports</div>
+				</div>
+				<div class="row">
+					<div class="quarter"></div>
+					<div class="threequarter gray">
+						<div class="menuItem"><a href="/secure/reports/create-report">Create report</a></div>
+						<div class="menuItem selected"><a href="/secure/reports/report-management">Report management</a></div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+		<div id="main">
+			<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+			<div class="LesserpageMargin">
+				
+				<div class="row">	
+					<h1>Report management</h1>
+					<p>Add a new report to the site. Attach a preview by uploading it via the file manager in the subfolder report-previews.</p>
+				</div>
+				<div class="row">
+					<form id="reportForm" title="Saving your report" class="forms columnar ">
+					<ul>
+						<li>
+						
+							 <div class="twothird cmsForm"><input type="text" name="search" class="width-max" id="search" placeholder="Type keywords to search" /></div>
+							 <div class="third cmsForm"><select id="report-year" name="report-year" class="width-max"><option value="">Choose Year</option><php>openView.getReportYears()</php></select></div>
+							
+						
+						</li>
+					</ul>
+					</form>      
+				</div>
+				<form id="getReport" title="Retrieving your report">
+				<table id="reportManagement" class="searchTable hovered report-table">
+					<thead>
+						<tr>
+							<th>Report title</th>
+							<th>Preview file</th>
+							<th>Keywords</th>
+							<th>Published</th>
+							<th>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<php>openView.getReports('includes/trow.html','includes/tcell.html',5)</php>
+					</tbody>
+				</table>
+				</form>
+				
+			</div>
+		</div>
+	
+
+</div>
+
+
+</body>
+</html>

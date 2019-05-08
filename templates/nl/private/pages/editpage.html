@@ -1,0 +1,97 @@
+<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+<div class="pageMargin">
+			
+			<div class="row">
+				<div class="twothird">
+				<div id="imac">
+					<div id="thumbnailContainer"><img id="thumbnail" src="" /></div>
+				</div>
+				</div>
+				<div class="third editContentBtn"><a href="" id="editContent" class="btn">Wijzigen</a></div>
+			</div>
+		
+			<br>
+			<form method="post" action="" id="websitetree" class="forms columnar">
+					<input type="hidden" name="id" id="id" value="" />
+			         <ul>
+			        	 <li class="form-section"></li>
+			 			<li><h1>Instellingen van deze pagina</h1></li>
+			            
+			            <li class="section-title"><h3>Content eigenschappen</h3></li>
+			            <li>
+			                <label for="page_title">Pagina titel <span class="req">*</span></label>
+			                <input type="text" name="page_title" id="page_title" class="width-300px edit validate[required]" placeholder="De titel van deze pagina" />
+			            </li>
+			            <li>
+			                <label for="foo">Pagina url <span class="req">*</span></label>
+			                <input type="text" name="page_url" id="page_url" value="/" class="width-300px edit validate[required]" placeholder="De relatieve url naar deze pagina" /> 
+			            </li>
+			            <li>
+			               <fieldset>
+			               <section><label for="state">Onderdeel van menu<span class="req">*</span></label></section>
+			                	<div class="checkbox"><input type="checkbox" id="is_menu" name="is_menu" ></div>
+			            	</fieldset>
+			            </li>
+			            <li>
+			                <fieldset>
+			                	<section><label for="cms_template">Template <span class="req">*</span></label></section>
+			                	<select id="cms_template" name="cms_template" class="width-300px"><php>openView.getCMSTemplates()</php></select>
+			            	</fieldset>
+			            </li>
+						<li class="section-title"><h3>Meta tags</h3></li>
+						<li>
+						    <label for="page_name">Naam <span class="req">*</span></label>
+						    <input type="text" name="page_name" id="page_name" maxlength="20" class="width-300px edit validate[required]" placeholder="Een unieke naam" /> 
+						</li>
+							<li>
+						    <label for="meta_author">Auteur <span class="req">*</span></label>
+						    <input type="text" name="meta_author" id="meta_author" placeholder="De auteur van deze pagina" class="width-300px" />
+						</li>
+						<li>
+						    <fieldset>
+						   	 <section><label for="meta_description">Omschrijving <span class="req">*</span></label></section>
+						   	 <textarea name="meta_description" id="meta_description" class="width-300px" placeholder="Een korte meta omschrijving"></textarea> 
+							</fieldset>
+						</li>
+						<li>
+						    <fieldset>
+						   	 <section><label for="meta_keywords">Sleutelwoorden <span class="req">*</span></label></section>
+						   	 <textarea name="meta_keywords" id="meta_keywords" class="width-300px" style="height: 100px;" placeholder="Meta sleutelwoorden"></textarea> 
+							</fieldset>
+						</li>
+			            <li  class="section-title"><h3>Publicatie eigenschappen</h3></li>
+						<li>
+				          <fieldset>
+				          <section><label for="state">Gepubliceerd <span class="req">*</span></label></section>
+				           	<div class="checkbox"><input type="checkbox" id="state" name="state" ></div>
+							</fieldset>
+				       </li>
+						
+						<li>
+							<label for="publish_date">Publicatie datum <span class="req">*</span></label>
+							<input type="text" name="publish_date" id="publish_date" class="width-300px edit validate[required,past[archive_date]]"] placeholder="Publicatie datum" /> 
+						</li>
+			           <li>
+			           		<label for="archive_date">Archief datum <span class="req">*</span></label>
+			           		<input type="text" name="archive_date" id="archive_date" class="width-300px edit validate[future[publish_date]]" placeholder="Archier nooit" /> <span 
+			           	</li>
+			           	<li class="margin-top-50">
+			           		<fieldset><a href="" id="storePageProperties" class="btn send">Save properties</a></fieldset>
+			           	</li>
+			          
+			        </ul>
+			    	<div class="row margin-top-50 text-centered">
+			    		
+			    	</div>
+			 </form>
+
+
+</div>
+
+<script>$(document).ready( function() { $('#publish_date, #archive_date').datetimepicker({dateFormat: "dd/mm/yy"}); 
+
+
+$('input, textarea').placeholder();
+
+
+});</script>

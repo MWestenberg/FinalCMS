@@ -1,0 +1,8 @@
+Contactformulier  FinalCMS
+
+Naam: <param1>
+E-mailadres: <param2>
+Telefoonnummer: <param3>
+
+Opmerking of vraag:
+<param4>

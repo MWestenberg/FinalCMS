@@ -1,0 +1,309 @@
+  
+@font-face {font-family: 'Quan';src: url('webfonts-front/27981D_0_0.eot');src: url('webfonts-front/27981D_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts-front/27981D_0_0.woff') format('woff'),url('webfonts-front/27981D_0_0.ttf') format('truetype'),url('webfonts-front/27981D_0_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Quan-Bold';src: url('webfonts-front/27981D_1_0.eot');src: url('webfonts-front/27981D_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts-front/27981D_1_0.woff') format('woff'),url('webfonts-front/27981D_1_0.ttf') format('truetype'),url('webfonts-front/27981D_1_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Quan-Book';src: url('webfonts-front/27981D_2_0.eot');src: url('webfonts-front/27981D_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts-front/27981D_2_0.woff') format('woff'),url('webfonts-front/27981D_2_0.ttf') format('truetype'),url('webfonts-front/27981D_2_0.svg#wf') format('svg');}
+ 
+  
+@font-face {font-family: 'Quan-Light';src: url('webfonts-front/27981D_3_0.eot');src: url('webfonts-front/27981D_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts-front/27981D_3_0.woff') format('woff'),url('webfonts-front/27981D_3_0.ttf') format('truetype'),url('webfonts-front/27981D_3_0.svg#wf') format('svg');}
+
+@font-face {font-family: 'ProximaNova-Regular';src: url('webfonts/241356_10_0.eot');src: url('webfonts/241356_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_10_0.woff') format('woff'),url('webfonts/241356_10_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'ProximaNova-Light';src: url('webfonts/241356_13_0.eot');src: url('webfonts/241356_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_13_0.woff') format('woff'),url('webfonts/241356_13_0.ttf') format('truetype');}
+
+@font-face {font-family: 'ProximaNova-Semibold';src: url('webfonts/241356_11_0.eot');src: url('webfonts/241356_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_11_0.woff') format('woff'),url('webfonts/241356_11_0.ttf') format('truetype');}
+
+
+
+
+html,body {
+	font-family: 'Quan-Book',Helvetica,Arial;
+	background: #FFFFF;
+	margin: 0;
+	padding: 0;
+	color: #4D4D4D;
+	height: 100%;
+}
+
+
+A IMG {
+	border: 0;
+}
+
+.textmiddle {vertical-align:middle; margin-right: 5px;border: 0;} 
+
+.ui-dialog-titlebar {
+	display: none;
+}
+.ui-dialog {
+	padding: 0!important;
+		
+}
+.ui-dialog-content P {
+	font-size: 1em;	
+}
+/*
+.ui-dialog.ui-corner-all,.ui-button.ui-corner-all {
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-khtml-border-radius: 0 !important;
+	border-radius: 0 !important;
+}*/
+.fancy-checkbox {display:none;}
+.toggle {background:url("../images/toggle-old.png") bottom left;display:block;width:70px;height:22px; float: left;clear: none;margin-right: 5px;}
+.toggle.checked{background-position:top left;}
+
+#messageDialog, #ajaxLoader {
+	margin-top: 25px;
+	width: 100%;
+	text-align: left;
+}
+
+#cancel,.cancel,.btn-gray {
+  
+  background: #787878; 
+
+}
+#cancel:hover,.cancel:hover,.btn-gray:hover {
+  background: #acacac;
+  
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: inherit;
+	line-height: 1em;
+	
+}
+
+h1 A, h2 A, h3 A, h4 A, h5 A, h6 A {
+	text-decoration: none;	
+}
+
+
+#page .btn,#page .btn:hover,#page .btn:visited,#page .btn.focus {
+	color: #FFFFFF!important;
+	font-family: 'Quan-Book',Helvetica,Arial;
+}
+
+.margin-top-50 {
+	margin-top: 50px;
+}
+.margin-top-100 {
+	margin-top: 100px;
+}
+
+.bold {
+	font-family: 'Quan-Bold';
+}
+#shoppinglist thead th, #shoppinglist tbody td {
+	font-size: 1.5em;
+	
+}
+.deleteFromShoppingList {
+	text-decoration: none;
+}
+
+.forms P {
+	margin: 10px;
+}
+
+#reportbuyform {
+	display: none;
+}
+
+.creditcardInfo {
+	display: none;
+}
+
+.btn.width-full {
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.width-80perc {
+	width: 80%;
+}
+.calendars {
+	width: 130px;
+	height: 75px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.calendar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 75px;
+	height: 75px;
+	overflow: none;
+	background: url('../images/frontend/calendar-pages.png') top left no-repeat;
+	margin: 0;
+	padding: 0;
+}
+.calendar-small1 {
+	position: absolute;
+	left: 75px;
+	top: 0;
+}
+
+.calendar-small2 {
+	position: absolute;
+	left: 75px;
+	top: 36px;
+}
+.calendarBox {
+	border-bottom: 1px dotted #CECECE;
+
+}
+.calenderbox-title {
+	padding-top: 7px;
+}
+.calendar-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.calendar-month {
+	position: absolute;
+	top: 3px;
+	left: 10px;
+	z-index: 1;
+	font-family: Arial;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+.calendar-month-small {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	z-index: 3;
+	font-family: Arial;
+	font-size: 6px;
+	text-transform: uppercase;
+}
+
+.calendar-number {
+	position: absolute;
+	top: 26px;
+	left: 12px;
+	z-index: 1;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 40px;
+	color: #9F1D63;
+}
+.calendar-number-small {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	z-index: 3;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: #9F1D63;
+}
+
+.calendar-year {
+	position: absolute;
+	bottom: 6px;
+	right: 15px;
+	z-index: 1;
+	font-family: Arial;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+
+.calendar-year-small {
+	position: absolute;
+	bottom: 6px;
+	right: 15px;
+	z-index: 3;
+	font-family: Arial;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+.calendar-loc {
+	color: #8d8d8d;
+	
+	text-decoration: none;
+	
+}
+.calendar-title {
+	color: #4D4D4D;
+	text-decoration: none;
+	font-size: 1.1em;
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+A.readmore {
+	text-decoration: none;
+}
+
+.calendarBlock {
+	margin-bottom: 20px!important;
+}
+.btn-purple {
+	font-family: 'Quan-Book'!important;
+	font-size: 1.8em;
+}
+
+A.archive {
+	
+	color: #7a7a7a;
+}
+A.archive:hover {
+	color: #4E7AC7;
+}
+P.report-thumb {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+P.report-title {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: 'Quan-Book';
+	font-size: 1.2em!important;
+
+}
+
+.report-thumb-image {
+	-moz-box-shadow: 0px 0px 3px #333;
+	-webkit-box-shadow: 0px 0px 3px #333;
+	box-shadow: 0px 0px 3px #333;
+}
+#search-report {
+	background: none;
+	border: 1px solid #cecece!important;
+	margin-bottom: 20px;
+}
+#search-report:focus {
+	border: 1px solid #000!important;
+}
+
+.slides {
+  display: none
+}
+.slides IMG {
+	margin-bottom: 0!important;
+}
+.slidesjs-navigation, .slidesjs-pagination {
+	display: none!important;
+}
+.slideContainer {
+	top: 85px;
+	position: relative;
+	height: 450px;
+}

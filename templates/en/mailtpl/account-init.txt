@@ -1,0 +1,15 @@
+Dear <param1>,
+
+An account was created for you on <param2> with the following username:
+
+<param1>
+
+You can set your password by clicking the link below:
+<param3>
+
+Once you are signed in you can change your password without limitation. We advice to reset your password every month.
+
+When you forgot your password you can reset it by clicking the link on login-screen. You will then receive an e-mail with instructions. Resetting your password via the login-screen can only be done once every 24 hours.
+
+With kind regards,
+<param5>

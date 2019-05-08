@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="cache-control" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Template</title>
+	<tpl>jquery</tpl>
+	<script src="/js/custom.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>validation</tpl>
+	<tpl>style</tpl>
+	<link rel="stylesheet" media="all and (min-width: 1001px)" href="/css/finalcms-grid1001.css">
+	<link rel="stylesheet" media="all and (max-width: 1001px)" href="/css/finalcms-grid768.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/finalcms-grid1001.css">
+	<![endif]-->
+</head>
+<body>
+<div id="frontEndMenu">
+	<div class="awalogo"><img src="/images/frontend/logo.png" width="184" height="63" align="left" /></div>
+	<ul>
+		<php>openView.frontMenu(includes/menu.html)</php>
+		<li><a class="frontEndItem" href="http://awaccess.awa-bv.com/?type=plain&c=login&t=auth">AWAccess&trade;</a></li>
+	</ul>
+</div>
+
+
+<div id="footer">Copyright &copy; AWA Alexander Watson Associates BV <php>openView.getCurrentYear()</php>. All rights reserved. <a href="/disclaimer">Terms of use.</a></div>
+</body>
+</html>

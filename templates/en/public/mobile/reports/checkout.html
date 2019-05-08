@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="cache-control" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Shop</title>
+	<tpl>jquery</tpl>
+	<script src="/js/custom.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>validation</tpl>
+	<tpl>style</tpl>
+	<link rel="stylesheet" media="all and (min-width: 901px)" href="/css/finalcms-grid1001.css">
+	<link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 900px)" href="/css/finalcms-grid768.css">
+	<link rel="stylesheet" media="all and (max-width: 767px)" href="/css/finalcms-grid300-web.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/finalcms-grid1001.css">
+	<![endif]-->
+</head>
+<body>
+<div id="frontEndMenu">
+	<div class="awalogo"><img src="/images/frontend/logo.png" width="184" height="63" align="left" /></div>
+	<ul id="menuList">
+		<php>openView.frontMenu(includes/menu.html)</php>
+		<li><a class="frontEndItem" href="http://awaccess.awa-bv.com/?type=plain&c=login&t=auth">AWAccess&trade;</a></li>
+	</ul>
+	<div class="dropdownContainer">
+		<div class="moreDropdown">
+			<a class="more" >
+				<span>More</span>
+			</a>
+			<div class="submenu" style="display: none; ">
+				<ul id="submenuList" class="moreDropdownMenu"></ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" >
+	
+	<div id="banner" class="row">
+	 
+	</div>
+
+	<div class="basicContent">
+		
+			<form method="post" action="" class="forms columnar">
+			    <h2>Shopping cart</h2>
+			    <fieldset>
+			   <div class="row">
+					<table id="shoppinglist" class="width-100 bordered">
+						<thead class="thead-gray">
+							<tr>
+								<th>Title</th>
+								<th>Description</th>
+								<th>Price</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+							<php>openView.viewShoppingCart()</php>
+						</tbody>
+					</table>
+			   </div>
+			   	<div class="row">
+			   		<div class="push-right"><a href="/reports/checkout" id="checkout" class="btn ">Checkout</a> </div>
+				</fieldset>
+			</form>
+			
+			
+		</div>
+	</div>
+	
+	
+</div>
+<div id="footer">Copyright &copy; AWA Alexander Watson Associates BV 2006. All rights reserved. <a href="/disclaimer">Terms of use.</a></div>
+</body>
+</html>

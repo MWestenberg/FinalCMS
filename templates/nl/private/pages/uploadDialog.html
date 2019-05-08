@@ -1,0 +1,43 @@
+<script> 
+        $(document).ready(function() { 
+
+			var completed 		= '0%';
+		
+			$("#UploadForm").uploadForm({
+				beforeSend: function() { //brfore sending form
+					$("#SubmitButton").attr('disabled', ''); // disable upload button
+					$('#statustxt').empty();
+					$('#progressbox').show(); //show progressbar
+					$('#progressbar').width(completed); //initial value 0% of progressbar
+					$('#statustxt').html(completed); //set status text
+					$('#statustxt').css('color','#000'); //initial color of status text
+					$("#output").empty();
+				},
+				uploadProgress: function(event, position, total, percentComplete) { //on progress
+					$('#progressbar').width(percentComplete + '%') //update progressbar percent complete
+					$('#statustxt').html(percentComplete + '%'); //update status text
+					if(percentComplete>50)
+						{
+							$('#statustxt').css('color','#fff'); //change status text to white after 50%
+						}
+					},
+				complete: function(response) { // on complete
+					$("#output").html(response.responseText); //update element with received data
+					$("#UploadForm").resetForm();  // reset form
+					$("#SubmitButton").removeAttr('disabled'); //enable submit button
+					$('#progressbox').hide(); // hide progressbar
+				}
+		});
+    }); 
+
+    </script> 
+<form action="/upload" method="post"  class="dialogForm" enctype="multipart/form-data" id="UploadForm">
+<h3>Bestand uploaden</h3>
+<input type="hidden" name="currentDir" id="currentDir" value="" />
+<input type="hidden" name="page" id="page" value="" />
+<div>Bestand:<input name="pdfFile" type="file" /></div>
+<div class="buttons"><input type="button" class="closeUpload button" name="cancel" id="cancel" value="Sluiten / Annuleren" /> <input type="submit" class="button"  id="SubmitButton" value="Upload" /></div>
+</form>
+
+<div id="progressbox"><div id="progressbar"></div ><div id="statustxt">0%</div ></div>
+<div id="output"></div>

@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="cache-control" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Event registration</title>
+	<tpl>jquery</tpl>
+	<script src="/js/custom.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>validation</tpl>
+	
+	<link rel="stylesheet" href="/css/kube-front.css" type="text/css" />
+	<link rel="stylesheet" href="/css/finalcms-general.css" type="text/css" />
+	
+	
+	<link rel="stylesheet" media="all and (min-width: 901px)" href="/css/finalcms-grid1001.css">
+	<link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 900px)" href="/css/finalcms-grid768.css">
+	<link rel="stylesheet" media="all and (max-width: 767px)" href="/css/finalcms-grid300-web.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/finalcms-grid1001.css">
+	<![endif]-->
+</head>
+<body>
+<div id="frontEndMenu">
+	<div class="awalogo"><img src="/images/frontend/logo.png" width="184" height="63" align="left" /></div>
+	<ul id="menuList">
+		<php>openView.frontMenu(includes/menu.html)</php>
+		<li><a class="frontEndItem" href="http://awaccess.awa-bv.com/?type=plain&c=login&t=auth">AWAccess&trade;</a></li>
+	</ul>
+	<div class="dropdownContainer">
+		<div class="moreDropdown">
+			<a class="more" >
+				<span>More</span>
+			</a>
+			<div class="submenu" style="display: none; ">
+				<ul id="submenuList" class="moreDropdownMenu"></ul>
+			</div>
+		</div>
+	</div>
+	<div id="cart"><a href="/reports/checkout"><img src="/images/frontend/cart-big.gif" width="36" height="28" alt="cart" /></a></div>
+</div>
+<div id="socialmedia">
+	<a href="https://twitter.com/AWA_Worldwide" target="_blank"><img src="/images/frontend/twitter.png" width="34" height="34" alt="tweet" /></a>
+	<a href="http://nl.linkedin.com/pub/awa-alexander-watson-associates/40/a99/4b7/" target="_blank"><img src="/images/frontend/linkedin.png" width="34" height="34" alt="link" /></a>
+</div>
+<div id="page" >
+	
+	<div class="row smallbanner"></div>
+	
+	<div class="basicContent">	
+		
+	   <div class="units-row">&nbsp; </div>
+	   <div id="joineventform" class="units-row">
+	   		<h1>Event registration form</h1>
+		   <php>openView.getChosenEvent()</php>
+		   <p>Please fill in the form to register</p>
+		   <form method="post" id="registerEvent" action="" class="forms forms-columnar">
+		   		<input type="hidden" name="eventID" id="eventID" value="<php>openView.getParam(1)</php>" />
+		   		<input type="hidden" name="currency" id="currency" value="<php>openView.getEventCurrency()</php>" />
+		   		
+		   		
+		   		<p>Information marked with an <em class="req">*</em> is mandatory in order to complete your registration</p>
+		   		<p>
+		   			<label>Title</label>
+		   			<select id="salutation" name="salutatiotitlen" class="width-100"  data-prompt-position="topRight">
+		   				<option value="">Choose your title</option>
+		   				<option value="">Mr</option>
+		   				<option value="">Mrs</option>
+		   				<option value="">Ms</option>
+		   				<option value="">Dr</option>
+		   				<option value="">Prof</option>
+		   			</select>
+		   		</p>
+		      	<p>
+		      		<label>First name <em class="req">*</em></label>
+		      		<input type="text" id="firstname" name="firstname" class="width-100 edit validate[required]"  data-prompt-position="bottomLeft" value="" />
+		      	</p>
+		      	<p>
+		      		<label>Last name <em class="req">*</em></label>
+		      		<input type="text" id="lastname" name="lastname" class="width-100 edit validate[required]" data-prompt-position="topRight"  value=""/>
+		      	</p>
+		      <p>
+		      	<label>Company name <em class="req">*</em></label>
+		      	<input type="text" id="company" name="company" class="width-100 edit validate[required]"  data-prompt-position="bottomLeft" value="" />
+		      </p>
+		      	<p>
+		      		<label>Job title <em class="req">*</em></label>
+		      		<input type="text" id="jobtitle" name="jobtitle" class="width-100 edit validate[required]" value="" data-prompt-position="topLeft" />
+		      	</p>
+		      	<p>
+		      		<label>Address <em class="req">*</em></label>
+		      		<input type="text" id="address" name="address" class="width-100 edit validate[required]"  data-prompt-position="topRight" value=""/>
+		      	</p>
+		      	<p>
+		      		<label>Zip/Postal code <em class="req">*</em></label>
+		      		<input type="text" id="zipcode" name="zipcode" class="width-100 edit validate[required]"  data-prompt-position="bottomLeft" value="" />
+		      	</p>
+		      	<p>
+		      		<label>City <em class="req">*</em></label>
+		      		<input type="text" id="city" name="city" class="width-100 edit validate[required]"  data-prompt-position="topRight" value="" />
+		      	</p>
+		      	<p>
+		      		<label>State/Province/County</label>
+		      		<input type="text" id="province" name="province" class="width-100 edit"  data-prompt-position="bottomLeft" value=""/>
+		      	</p>
+		      	<p>
+		      		<label>Country <em class="req">*</em></label>
+		      		<select id="country" name="country" class="validate[required] width-100"  data-prompt-position="topRight">
+		      			<option value="">Choose your country</option>
+		      			<php>openView.getCountries()</php>
+		      		</select>
+		      	</p>
+		      	<p>
+		      		<label>VAT #</label>
+		      		<input type="text" id="vat" name="vat" class="width-100 edit" value="" />
+		      		<span class="forms-desc">Required for EU-countries</span>
+		      	</p>
+		      	<p>
+		      		<label>Telephone <em class="req">*</em></label>
+		      		<input type="text" id="telephone" name="telephone"  class="width-100 edit validate[required,custom[phone]]" data-prompt-position="bottomLeft" value="" />
+		      	</p>
+		      	<p>
+		      		<label>E-mail <em class="req">*</em></label>
+		      		<input type="email" id="email" name="email"  class="width-100 edit validate[required,custom[email]]" data-prompt-position="topRight" value="" />
+		      	</p>
+		      	<php>openView.getRegFees('regfee.html')</php>
+		      	<php>openView.getFees('paymentfee.html')</php>
+		      	<p>
+		      		<label>Payment method <em class="req">*</em></label>
+		      		<ul class="forms-inline-list">
+		      			<li><input name="paymentmethod" type="radio" value="bank" class="validate[required] radio" data-prompt-position="bottomLeft"> <label>Bank transfer</label></li>
+		      			<li><input name="paymentmethod" type="radio" value="creditcard" class="validate[required]  radio"> <label>Creditcard</label></li>
+		      			<li>(Payments by credit card are subject to a 7% surcharge)</li>
+		      		</ul>
+		      	</p>
+		      	<p class="creditcardInfo">
+		      		<ul class="forms-inline-list creditcardInfo">
+		      			<li><label>Creditcard No. <em class="req">*</em></label></li>
+		      			<li class="width-100"><input type="text" id="creditcardnumber" name="creditcardnumber"  class="width-100 edit validate[required,custom[creditcard]]" data-prompt-position="centerLeft"/></li>
+		      		
+		      			<li><label>Cardholder name<em class="req">*</em></label></li>
+		      			<li class="width-100"><input type="text" id="cardholdername" name="cardholdername"  class="width-100 edit validate[required]" data-prompt-position="topRight" placeholder="The exact name on your card" /></li>
+		      		
+		      			<li><label>Cardholder address<em class="req">*</em></label></li>
+		      			<li class="width-100"><input type="text" id="cardholderaddress" name="cardholderaddress"  class="width-100 edit validate[required]" data-prompt-position="centerLeft" placeholder="street and city" /></li>
+		      		</ul>
+		      	</p>
+		      	<p  class="creditcardInfo">
+		      		<ul class="forms-inline-list creditcardInfo">
+		   				<li><label>CVC code <em class="req">*</em></label></li>
+		   				<li><input type="text" id="cvccode" name="cvccode"  class=" edit validate[required,custom[onlyNumberSp]]"  /></li>
+		      			<li><label>Valid thru: <em class="req">*</em></label></li>
+		      			<li><input type="text" id="validthru" name="validthru"  class=" edit validate[required,custom[validthru]]" placeholder="MM/YY" /></li>
+		      		</ul>
+		      	</p>
+		      	<p  class="creditcardInfo">
+		      		<ul class="forms-inline-list creditcardInfo">
+		      			<li><label>Card type <em class="req">*</em></label></li>
+		      			<li>
+		      				<select name="cardtype" class="width-100 validate[required]" data-prompt-position="centerLeft">
+		      					<option value="">Choose creditcard</option>
+		      					<option value="Amex">Amex</option>
+		      					<option value="Visa">Visa</option>
+		      					<option value="MasterCard">Eurocard/Mastercard</option>
+		      				</select>
+		      			</li>
+		   
+		      		</ul>
+		      	</p>
+		      	
+		      	<p>Please indicate how you have received information about this event.</select> <em class="req">*</em></p>
+		      	<p>
+		   		<select name="inforeceived" class="width-50 validate[required]">
+		   				<option value="">--- Please select the most suitable option ---</option>
+		   				<option value="Postal Mailing">Postal Mailing</option>
+		   				<option value="E-Mailing">E-Mailing</option>
+		   				<option value="AWA Website">AWA Website</option>
+		   				<option value="Industry/Trade Magazines">Industry/Trade Magazines</option>
+		   				<option value="Colleagues">Colleagues</option>
+		   			
+		      	</p>
+		     	<p>
+		      		<label>Remarks</label>
+		      		<textarea name="remark" id="remark" rows="5" class="width-100"></textarea>
+		      	</p>
+		      	<p>
+		      		<label>I agree to the <a href="/disclaimer" target="_blank">Terms</a></label>
+		      		<input type="checkbox" name="terms" id="terms" class="validate[required] checkbox" data-prompt-position="centerRight"/>
+		      	</p>
+		      	<p>&nbsp;</p>
+		      	<p>
+		      		<a href="" name="closebuyform" id="closebuyform" class="btn btn-small cancel">cancel</a>&nbsp;<a href="" id="order-report" class="send btn btn-small">submit registration form</a>
+		      	</p>
+		      </form>				
+			
+		</div>
+	</div>
+	
+	
+</div>
+<div id="footer">Copyright &copy; AWA Alexander Watson Associates BV 2006. All rights reserved. <a href="/disclaimer">Terms of use.</a></div>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40150318-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

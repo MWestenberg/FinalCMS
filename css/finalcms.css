@@ -1,0 +1,91 @@
+@font-face {font-family: 'ProximaNova-Regular';src: url('webfonts/241356_10_0.eot');src: url('webfonts/241356_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_10_0.woff') format('woff'),url('webfonts/241356_10_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'ProximaNova-Light';src: url('webfonts/241356_13_0.eot');src: url('webfonts/241356_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_13_0.woff') format('woff'),url('webfonts/241356_13_0.ttf') format('truetype');}
+
+@font-face {font-family: 'ProximaNova-Semibold';src: url('webfonts/241356_11_0.eot');src: url('webfonts/241356_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_11_0.woff') format('woff'),url('webfonts/241356_11_0.ttf') format('truetype');}
+
+html,body {
+	font-family: 'ProximaNova-Light',Verdana;
+	
+	background: #F5F5F5;
+	margin: 0;
+	padding: 0;
+	color: #4D4D4D;
+	height: 100%;
+}
+
+
+A IMG {
+	border: 0;
+}
+
+.textmiddle {vertical-align:middle; margin-right: 5px;border: 0;} 
+
+.ui-dialog-titlebar {
+	display: none;
+}
+.ui-dialog {
+	padding: 0!important;
+		
+}
+/*
+.ui-dialog.ui-corner-all,.ui-button.ui-corner-all {
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-khtml-border-radius: 0 !important;
+	border-radius: 0 !important;
+}*/
+.fancy-checkbox {display:none;}
+.toggle {background:url("../images/toggle-old.png") bottom left;display:block;width:70px;height:22px; float: left;clear: none;margin-right: 5px;}
+.toggle.checked{background-position:top left;}
+
+#messageDialog, #ajaxLoader {
+	margin-top: 25px;
+	width: 100%;
+	text-align: left;
+}
+
+#cancel,.cancel {
+  
+  background: #787878; 
+
+}
+#cancel:hover,.cancel:hover {
+  background: #acacac;
+  
+}
+
+.vertical-center {
+	margin-top: 20%;
+}
+.width-max {
+	width: 98%;
+}
+
+.hide {
+	display: none;
+}
+
+/* overrides frontend style for display purposes*/
+.boxFill {
+	height: 300px!important;
+} 
+
+
+#banner IMG {
+	margin: 0!important;
+	top: 0!important;
+}
+
+#frontEndMenu {
+	position: relative!important;
+	z-index: 1!important;
+	border-bottom: none!important;
+	background: none!important;
+}
+h3.gray-dark {
+  color: #555555!important;
+}
+#frontEndMenu {
+	overflow-y: hidden!important;
+}

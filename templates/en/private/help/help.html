@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Contact</title>
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<script src="/js/md5.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>style</tpl>
+</head>
+<body>
+<div id="wrapper">
+	<div id="lefthandMenu">
+		<div id="profileMenu">
+			
+			<div class="row">
+			    <div class="quarter"><img src="/images/finalcms/avatar.png" /></div>
+			   <div class="threequarter ">
+			   	<span class="offWhite big">Alexander Watson Associates</span><br/>
+			   	<span class="finalCMSMenu"><a href="/secure/account">Account settings</a> // <a href="/signout" id="signout">sign out</a></span>
+			   </div>
+			</div>
+			
+		</div>
+		<div class="smallMargin">
+			
+			<div class="row">
+				<div class="quarter"></div>
+				<div class="threequarter gray">
+					<div class="menuItem"><a href="/secure/start">start</a></div>
+					<tpl>getParentMenu</tpl>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div id="main">
+		<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+		<div class="pageMargin">
+		
+			<div class="text-centered" >
+				<img src="/images/finalcms/needhelp.png" width="147" height="106" alt="" />
+				<h1>Need some help?</h1>
+				<p>FinalCMS &copy; is a product of Final Media. If you need help or have any questions related to this CMS please contact us.</p>
+			</div>
+			
+			<form id="contactForm" title="Bezig met verzenden" class="forms columnar cmsForm">
+			<ul>
+	
+			   	<li class="section-title"><h3>Contact form</h3></li>
+			   	<li>
+			   	    <label for="name">Full name<span class="req">*</span></label>
+			   	    <input type="text" name="name" id="name" class="width-300px edit validate[required]" value="<php>openView.getFirstName()</php> <php>openView.getLastName</php>" placeholder="Your full name" />
+			   	</li>
+			   	<li>
+			   	    <label for="name">Email<span class="req">*</span></label>
+			   	    <input type="text" name="email" id="email" class="width-300px edit validate[required,custom[email]]" value="<php>openView.getEmail()</php>" placeholder="E-mail address" />
+			   	</li>
+			   	<li>
+			   	    <label for="name">Phone<span class="req">*</span></label>
+			   	    <input type="text" name="phone" id="phone" class="width-300px edit validate[required,custom[phone]]" value="<php>openView.getPhone()</php>" placeholder="Phone number" />
+			   	</li>
+			   	<li>
+			   	    <fieldset>
+			   	   	 <section><label for="remark">Question or remark<span class="req">*</span></label></section>
+			   	   	 <textarea name="remark" id="remark" style="height: 100px;" placeholder="Question or remark" class="width-300px edit validate[required]"></textarea> 
+			   		</fieldset>
+			   	</li>
+			   	<li class="margin-top-50">
+			   		<fieldset><button class="btn send" name="contact" id="contact" value="versturen" rel="contact">Send</button></fieldset>
+			   	</li>
+			   	
+			</ul>
+			</form>
+		</div>
+			
+				
+
+	</div>
+	
+		
+	
+</div>
+
+
+</body>
+</html>

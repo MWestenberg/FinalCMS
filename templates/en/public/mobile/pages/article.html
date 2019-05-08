@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="cache-control" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Template</title>
+	<tpl>jquery</tpl>
+	<script src="/js/custom.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>validation</tpl>
+	<tpl>style</tpl>
+	<script src="/js/responsivemobilemenu.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" media="all" href="/css/finalcms-grid300.css">
+	<link rel="stylesheet" media="all" href="/css/responsivemobilemenu.css">
+	
+	
+
+</head>
+<body>
+<div id="frontEndMenu" class="rmm" data-menu-style ="minimal">
+	<ul>
+		<php>openView.frontMenu(includes/menu.html)</php>
+		
+	</ul>
+	
+</div>
+
+<!-- content //-->
+<php>openView.getContent(includes/item.html)</php>
+<!-- end content //-->
+
+
+</body>
+</html>

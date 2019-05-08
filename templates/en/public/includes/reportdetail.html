@@ -1,0 +1,31 @@
+<div id="{blockId}" class="row dropBlock">
+	<div class="boxCross"><a href="#{reportId}"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+	<div class="dropBlockContent">
+		<div class="row">
+			<div class="third dropblockImage">
+				<div class="row">
+					<a href="/download/report-previews/{reportFile}" target="_blank"><img src="/stream/streamPDFPreview.php?file={reportFile}&type=report-previews&action=thumb" align="left" /></a>
+				</div>
+				<div class="row margin-top-50">
+				<p>
+					<a href="/download/report-previews/{reportFile}" target="_blank" class="btn btn-small btn-purple-small">View the brochure</a>
+				<br /><br />
+					<a href="/reports/checkout" id="{reportId}" class="addToCart btn btn-small">Add to cart</a>
+				</p>
+				<p><a href="/reports/checkout/{reportId}" class="btn btn-small">Buy</a></p>
+				</div>
+			</div>
+			<div class="twothird">
+				<h1 class="white">{report_title}</h1>
+				<p class="offwhite">
+					<span class="gray-light">Publication date:</span> {publish_date}<br />
+					<span class="gray-light">Price (USD):</span> $ {price} <br />
+					<span class="gray-light">Price (EURO):</span> &euro; {price_euro}
+				</p>
+				<p class="offwhite">{report_description}</p>
+				
+			</div>
+		</div>
+		
+	</div>
+</div>

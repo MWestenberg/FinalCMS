@@ -1,0 +1,55 @@
+<div class="basicContent">
+	<div class="row calendarBox" id="{eventId}">
+		<div class="sixth">
+			<div class="calendars">
+				<div class="calendar">
+					<div class="calendar-image"><a href="#{blockId}" class="readmore"><img src="/images/frontend/calendar-frame.png" width="75" height="75" alt="" /></a></div>
+					<div class="calendar-month">{month}</div>
+					<div class="calendar-number">{day}</div>
+					<div class="calendar-year">{year}</div>
+				</div>
+				<div class="calendar-small1">
+					<div class="calendar-image"><a href="#{blockId}" class="readmore"><img src="/images/frontend/calendar-small.png" width="34" height="35" alt="" /></a></div>
+					<div class="calendar-month-small">{month2}</div>
+					<div class="calendar-number-small">{day2}</div>
+				</div>
+				<div class="calendar-small2">
+					<div class="calendar-image"><a href="#{blockId}" class="readmore"><img src="/images/frontend/calendar-small.png" width="34" height="35" alt="" /></a></div>
+					<div class="calendar-month-small">{month3}</div>
+					<div class="calendar-number-small">{day3}</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="fivesixth calenderbox-title"><a href="#{blockId}" class="readmore"><p><span class="calendar-title">{event_title}</span><span class="calendar-loc">{location} - {date}</span></p></a></div>
+	</div>
+</div>
+<div class="fullContent">
+	<div id="{blockId}" class="row dropBlock calendarBlock">
+		<div class="boxCross"><a href="#{eventId}"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+		<div class="dropBlockContent">
+			<div class="row">
+				<div class="third dropblockImage">
+					<div class="row"><a href="/download/event-brochures/{eventFile}" target="_blank"><img src="/stream/streamPDFPreview.php?file={eventFile}&amp;type=event-brochures&amp;action=thumb" align="left" /></a></div>
+					<div class="row margin-top-50">
+					<p>
+						<a href="/download/event-brochures/{eventFile}" target="_blank" class="btn btn-small btn-purple-small">View Brochure</a>
+					<br /><br />
+						<a href="/events/register/{eventId}" id="{eventId}" class="btn btn-small">Register</a>
+					</p>
+					</div>
+				</div>
+				<div class="twothird">
+					<h1 class="white">{event_title}</h1>
+					<p class="offwhite">
+						<span class="gray-light">Date:</span> {date}<br />
+						{regfee}
+					</p>
+					<p class="offwhite">{event_description}</p>
+					
+				</div>
+			</div>
+				
+		</div>
+	</div>
+</div>

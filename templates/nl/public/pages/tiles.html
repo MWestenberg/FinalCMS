@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Template</title>
+	<tpl>jquery</tpl>
+	<tpl>style</tpl>
+
+	<link rel="stylesheet" href="/css/tiles.css" type="text/css" />
+	
+	<script>
+		$(document).ready( function() {
+			
+			 
+			/*
+			$('#animator').on('mouseover',function(){
+			   $('.tile').addClass('leftRotate').removeClass('rightRotate'); 
+			});
+			    
+			$('#animator').on('mouseout',function(){
+			   $('.tile').addClass('rightRotate').removeClass('leftRotate'); 
+			});
+			*/
+			
+			$("#dialog").hide();
+			
+			setTimeout(function(){
+				
+			       $('.tile').addClass('rightRotate').removeClass('leftRotate');}, 1000);
+			
+			
+			
+			
+			$(".openDialog").click(function(e) {
+				e.preventDefault();
+				$('.tile').addClass('leftRotate').removeClass('rightRotate');		
+				$("#dialog").show();
+				
+			});
+			
+			$("#back").click(function(e) {
+				e.preventDefault();
+				$('.tile').addClass('rightRotate').removeClass('leftRotate');
+				$("#dialog").hide();
+			});
+		});    
+	
+	</script>
+	
+</head>
+	
+
+<body>
+
+
+
+<div class="span4 animated" id="pitchdeck-controls">
+    <div class="row" id="tilesRow1">
+    	<div class="fifth">
+	        <a href="" class="openDialog">
+	            <div class="span2 tile leftRotate" id="tile1">
+	                <p class="tile-meta">
+	                How To
+	                </p>
+	            </div>
+	        </a>
+	     </div>
+	     <div class="fifth"> 
+	        <a href="" class="openDialog">
+	            <div class="span2 tile leftRotate" id="tile2">
+	                <p class="tile-meta">
+	                2nd Slide
+	                </p>
+	            </div>
+	        </a>
+        </div>
+        <div class="fifth"> 
+            <a href="" class="openDialog">
+                <div class="span2 tile leftRotate" id="tile3">
+                    <p class="tile-meta">
+                    2nd Slide
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="fifth"> 
+            <a href="" class="openDialog">
+                <div class="span2 tile leftRotate" id="tile4">
+                    <p class="tile-meta">
+                    2nd Slide
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="fifth"> 
+            <a href="" class="openDialog">
+                <div class="span2 tile leftRotate" id="tile5">
+                    <p class="tile-meta">
+                    2nd Slide
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="dialog">
+
+	<button id="back">BacktoTiles</button>
+</div>
+
+
+</body>
+</html>

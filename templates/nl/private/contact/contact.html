@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Contact</title>
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<script src="/js/md5.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>style</tpl>
+</head>
+<body>
+<div id="wrapper">
+	<div id="lefthandMenu">
+		<div id="profileMenu">
+			
+			<div class="row">
+			    <div class="quarter"><img src="/images/avatar.png" /></div>
+			   <div class="threequarter ">
+			   	<span class="offWhite big">Alexander Watson Associates</span><br/>
+			   	<span><a href="/secure/account">Account settings</a> // <a href="/signout" id="signout">sign out</a></span>
+			   </div>
+			</div>
+			
+		</div>
+		<div class="smallMargin">
+			
+			<div class="row">
+				<div class="quarter"></div>
+				<div class="threequarter gray">
+					<div class="menuItem"><a href="/secure/start">start</a></div>
+					<tpl>getParentMenu</tpl>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div id="main">
+		<a href="#" id="closeMenu"><img src="/images/hamburger.png" width="18" height="15" alt="|||" /></a>
+		<div class="pageMargin">
+			<form id="contactForm" title="Bezig met verzenden" class="forms columnar cmsForm">
+			<ul>
+				 <li class="form-section"></li>
+				<li><h1>Settings for this page</h1></li>
+			   
+			   <li class="section-title"><h3>Content properties</h3></li>
+			   <li>
+			 </li>
+			</ul>
+		</div>
+				<p>FinalCMS is een service van Final Media. Voor vragen of opmerkingen kunt u gebruik maken van onderstaand contactformulier</p>
+				
+					<div><input type="text" id="name" name="name" value="<php>openView.getFirstName()</php> <php>openView.getLastName</php>" placeholder="Naam" class="edit validate[required]" /></div>
+					<div><input type="text" id="email" name="email" value="<php>openView.getEmail()</php>" placeholder="E-mailadres" class="edit validate[required,custom[email]]" /></div>
+					<div><input type="text" id="phone" name="phone" value="<php>openView.getPhone()</php>" placeholder="Telefoonnummer" class="edit validate[required,custom[phone]] " /></div>
+					<div><textarea id="remark" name="remark" placeholder="Vraag op opmerking" class="edit validate[required]"></textarea></div>
+					<div class="formSubmitBut"><input type="submit" class="contact button send" name="contact" id="contact" value="versturen" rel="contact" /></div>
+				</form>
+
+	</div>
+</div>
+
+</body>
+</html>

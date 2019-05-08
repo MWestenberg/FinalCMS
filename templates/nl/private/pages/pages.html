@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Asbestprojecten SC530</title>
+	
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<tpl>ckeditor</tpl>
+	<tpl>jquery-tree</tpl>
+	<tpl>style</tpl>
+	
+	<script src="/js/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+	
+	
+	
+	
+</head>
+<body>
+<div id="wrapper">
+		<div id="lefthandMenu">
+			
+			<div id="profileMenu">
+				
+				<div class="row">
+				    <div class="quarter"><img src="/images/finalcms/avatar.png" /></div>
+				   <div class="threequarter ">
+				   	<span class="offWhite big">Alexander Watson Associates</span><br/>
+				   	<span class="finalCMSMenu"><a href="/secure/account">Instellingen</a> // <a href="/signout" id="signout">afmelden</a></span>
+				   </div>
+				</div>
+				
+			</div>
+			<div class="smallMargin">
+				
+				<div class="row">
+					<div class="quarter"></div>
+					<div class="threequarter gray">
+						<div class="menuItem"><a href="/secure/start">start</a></div>
+						<tpl>getParentMenu</tpl>
+					</div>
+				</div>
+			</div>
+			<div id='jqxWidget'>
+				<!--<div><input type="button" id='RefreshTree' value="Refresh" /><input type="button" id='ExpandAll' value="Expand All" /> <input type="button" id='CollapseAll' value="Collapse All" /></div>//-->
+				<div tabIndex="1" style="float:left;" id="jqxTree">
+					
+				</div>
+				<div id='jqxMenuItemAdd'>
+				    <ul>
+				        <li>Nieuwe pagina</li>
+				        <li>Nieuw item</li>
+				    </ul>
+				</div>
+				<div id='jqxMenuItemAddRemove'>
+				    <ul>
+				        <li>Nieuwe pagina</li>
+				        <li>Remove Menu</li>
+				        <li>Add Item</li>
+				    </ul>
+				</div>
+				
+				<div id='jqxMenuAdd'>
+				    <ul>
+				        <li>Nieuwe pagina</li>
+				    </ul>
+				</div>
+				<div id='jqxMenuAddRemove'>
+				    <ul>
+				        <li>Add Page</li>
+				        <li>Remove Menu</li>
+				    </ul>
+				</div>
+				<div id='jqxMenuRemove'>
+				    <ul>
+				        <li>Verwijder pagina</li>
+				    </ul>
+				</div>
+				<div id='jqxItemAdd'>
+				    <ul>
+				        <li>Add Item</li>
+				    </ul>
+				</div>
+				<div id='jqxItemAddRemove'>
+				    <ul>
+				        <li>Add Item</li>
+				        <li>Remove Item</li>
+				    </ul>
+				</div>
+				<div id='jqxItemRemove'>
+				    <ul>
+				        <li>Remove Item</li>
+				    </ul>
+				</div>
+				<div id='jqxItemAddMenuRemove'>
+				    <ul>
+				        <li>Add Item</li>
+				        <li>Remove Page</li>
+				    </ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div id="main">
+			<div class="pageMargin">
+				<p>Klik op het linkermenu om uw pagina's op te maken.</p>
+			</div>
+		</div>
+	
+
+</div>
+
+</body>
+</html>

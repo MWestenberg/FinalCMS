@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Homepage</title>
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<tpl>style</tpl>
+</head>
+<body>
+
+<div id="wrapper">
+		<div id="lefthandMenu">
+			
+			<div id="profileMenu">
+				
+				<div class="row">
+				    <div class="quarter"><img src="/images/finalcms/avatar.png" /></div>
+				   <div class="threequarter ">
+				   	<span class="offWhite big">Alexander Watson Associates</span><br/>
+				   	<span class="finalCMSMenu"><a href="/secure/account">Account settings</a> // <a href="/signout" id="signout">sign out</a></span>
+				   </div>
+				</div>
+				
+			</div>
+			<div class="smallMargin">
+				
+				<div class="row">
+					<div class="quarter"></div>
+					<div class="threequarter gray">
+						<div class="menuItem selected"><a href="/secure/start">start</a></div>
+							<tpl>getParentMenu</tpl>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+		<div id="main">
+			<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+			<div class="pageMargin">
+				<div class="text-centered" >
+					<img id="mac" src="/images/finalcms/display-blue.png" width="362" height="290" alt="" />
+					<h1 class="starth1">Start creating content</h1>
+					<php>openView.getParentMenu(true)</php>
+				</div>
+			</div>
+			
+		</div>
+</div>
+		
+<script>
+
+$(document).ready( function() {
+	//$("#mac").width('0px');
+	
+	//$("#mac").animate({width:'362px'},500);
+	
+});
+
+</script>
+
+</body>
+</html>

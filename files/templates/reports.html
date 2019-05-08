@@ -1,0 +1,168 @@
+<script src="/js/jquery.slides.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  $(function() {
+    $('#banner').slidesjs({
+	  height:346,
+	  effect: {
+	    slide: {
+	      // Slide effect settings.
+	      speed: 200
+	        // [number] Speed in milliseconds of the slide animation.
+	    },
+	    fade: {
+	      speed: 1000,
+	        // [number] Speed in milliseconds of the fade animation.
+	      crossfade: true
+	        // [boolean] Cross-fade the transition.
+	    }
+	  }, 
+      play: {
+        active: true,
+        auto: true,
+        interval: 5000,
+        swap: true,
+       	effect: "fade",
+       	swap: false
+      }
+      
+      
+    });
+  });
+</script>
+<div id="page" >
+	
+	<div class="slideContainer">
+		<div id="banner" class="row slides">
+		    <php>openView.getReportBanners()</php>
+		</div>
+	</div>
+	
+	<div class="basicContent">
+		<h1 id="h1" contenteditable="true">Focused, practical and reliable market information</h1>
+		<p id="p1" class="editable pintro" contenteditable="true">
+			AWA publishes a wide range of in-depth reports at regular intervals. Each Report has specific scope and covers a specific region or segment. All our Published Reports are based on extensive studies by an experienced team and the AWA principals are personally involved at every stage of a project. 		
+		</p>
+		<div class="row text-centered">
+			<p><a class="btn" href="/reports/report-shop">view all reports</a></p>
+		
+		</div>		
+	</div>
+	<div class="fullContent featureBox">
+		<div class="row basicContent">
+			<div class="row"><h2  id="s1" contenteditable="true">Types of reports we offer</h2></div>
+			<div class="row boxContainer">
+				
+				<div id="box1" class="third boxFill">
+					<div  class="boxContent editable" contenteditable="true" id="b1">
+						<img src="/images/frontend/document-icon.png" width="66" height="98" />
+						<h3 id="h7">Market Studies</h3>
+					</div>
+					<div class="toBottom">
+						<a class="btn readmore" href="#readmore1">Read more</a>
+					</div>
+				</div>
+				<div id="box3" class="third boxFill">
+					<div class="boxContent editable" contenteditable="true" id="b2">
+						<img src="/images/frontend/document-icon.png" width="66" height="98" />
+						<h3 id="h9">Market Updates</h3>
+					</div>
+					<div class="toBottom">
+						<a class="btn readmore" href="#readmore2">Read more</a>
+					</div>
+				</div>
+				<div id="box4" class="third boxFill">
+					<div class="boxContent editable" contenteditable="true" id="b3">
+						<img src="/images/frontend/document-icon.png" width="66" height="98" />
+						<h3 id="h10">AWAreness&trade; Reports</h3>
+					</div>
+					<div class="toBottom">
+						<a class="btn readmore" href="#readmore3">Read more</a>
+					</div>
+				</div>
+				
+			</div>
+			
+		
+	</div>
+	
+	<div class="fullContent ">
+		<div id="readmore1" class="row dropBlock">
+				<div class="boxCross"><a href="#box1"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+				<div class="dropBlockContent">
+					<h1 class="white" contenteditable="true" id="h11">Regional Market Studies</h1>
+					<p id="p10" class="offwhite" contenteditable="true">Our Regional Market Studies provide a detailed overview of the regional market for a product or technique? They include market characteristics, material and technological developments, and offer a value chain analysis. 
+					Each Study includes a section with company profiles or a company directory that gives an overview of the main regional players in the market.
+					</p>
+					<p id="p11" contenteditable="true">
+						<a href="/reports/report-shop/market-studies" class="btn btn-small">View reports</a>
+					</p>
+				</div>
+			</div>
+			<div id="readmore2"  class="row dropBlock">
+				<div class="boxCross"><a href="#box3"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+				<div class="dropBlockContent">
+					<h1 class="white" id="h13" contenteditable="true">Global Market Updates</h1>
+					<p id="p12" class="offwhite" contenteditable="true">Global Market Updates provide up-to-date, concise and accessible quick scans of selected markets worldwide, providing converting industries with an accurate and complete global guide and benchmark.
+					Sort of 'exec summary', but not for execs
+					Shorter/less extensive that Market Studies
+					</p>
+					<p id="p13" contenteditable="true">
+						<a href="/reports/report-shop/market-updates" class="btn btn-small">View reports</a>
+					</p>
+				</div>
+			
+			</div>
+			<div id="readmore3"  class="row dropBlock">
+				<div class="boxCross"><a href="#box4"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+				<div class="dropBlockContent">
+					<h1 class="white" id="h14" contenteditable="true">AWAreness&trade; Reports</h1>
+					<p id="p14" class="offwhite" contenteditable="true">Our established series of AWAreness&trade; Reports is designed to meet the needs of business executives? making first-stage evaluations of new market opportunities with concise, focused, up-to-the-minute briefings on industry 'hot topics'.</p>
+					<p id="p15" contenteditable="true">
+						<a href="/reports/report-shop/awareness-reports" class="btn btn-small">View reports</a>
+					</p>
+				</div>
+			
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="basicContent margin-top-100">
+		<h2 id="h16" class="editable" contenteditable="true">Purchase options</h2>
+		<div class="row boxContainer">
+			
+			<div id="b4" class="third text-centered no-boxshadow editable"  contenteditable="true">
+				<div  class="boxContent">
+					<img id="i1" src="/images/frontend/document-icon.png" width="66" height="98" />
+					<h3>Single report</h3>
+				</div>
+			</div>
+			<div id="b5" class="third text-centered no-boxshadow editable"  contenteditable="true">
+				<div class="boxContent">
+					<img src="/images/frontend/document-icon.png" width="66" height="98" />
+					<h3>Bundle discount</h3>
+				</div>
+			</div>
+			<div id="b6" class="third text-centered no-boxshadow editable"  contenteditable="true" >
+				<div class="boxContent">
+					<img src="/images/frontend/document-icon.png" width="66" height="98" />
+					<h3>AWACCESS&trade;</h3>
+				</div>
+			</div>
+			
+		</div>
+		<p id="p16" contenteditable="true" class="editable">You can purchase individual Reports, buy a bundle discount, or get a subscription for AWAccess&trade; and get an all-access pass to all our publications for an annual fee. Our reports can be obtained in digital or hard copy format. We offer a package discount when you order several studies at the same time. Just contact our <a href="mailto:reports@awa-bv.com/">reports team</a> for questions and bundle discount rates and AWAccess&trade;</p>
+		<h2 id="h17">Areas of expertise</h2>
+		<p>We excel in a wide range of in-depth market reports with a unique industry focus on the specialty paper, film, packaging, coating and converting sector. Areas of expertise on which we publish include Coating &amp; Laminating, Labeling &amp; Product decoration, Converting &amp; Printing, Packaging, Paper &amp; Film Substrates,  Release Liners, Extrusion coating, Pressure-sensitive Graphic Arts,  Specialty Tapes, Product authentication &amp; Brand security, Specialty Papers. Visit our reports shop for a list of all our <a href="/reports/report-shop">Published Reports</a> to select and order.</p>
+		<h2 id="h20" contenteditable="true">Tailor-made market research</h2>
+		<p id="p18" contenteditable="true" class="editable">Our portfolio of Published Reports is extensive. However, if there is specific market intelligence that you require, but cannot find in one of our Published Reports, we can always perform tailor-made market research for you. For more information about this service, please check out our <a href="/consulting">Consulting</a> section.</p>
+	</div>
+	<div class="basicContent quote">
+		<div class="quoteText"  id="eq" contenteditable="true">The value provided in AWA Reports is exceptional, their understanding of the industry clearly sets them apart</div>
+	</div>
+	
+</div>
+
+	
+	
+	

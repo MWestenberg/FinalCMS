@@ -1,0 +1,14 @@
+<form id="userdialog" class="dialogForm">
+	<input type="hidden" name="id" id="id" value="" />
+	<input type="hidden" name="cid" id="cid" value="" />
+	<div><h3 class="formTitle">Gebruiker aanmaken</h3></div>
+	<div><span class="formText">Gebruikersnaam</span><input type="text" id="username" name="username" value="" placeholder="Wordt e-mailadres indien leeg" class="edit" /></div>
+	<div><span class="formText">Wachtwoord</span><input type="submit" class="button send" name="sendNewPass" id="sendNewPass" value="versturen" rel="sendNewPass" /></div>
+	<div><span class="formText">Voornaam</span><input type="text" id="firstname" name="firstname" value="" placeholder="voornaam" class="edit validate[required]" /></div>
+	<div><span class="formText">Achternaam</span><input type="text" id="lastname" name="lastname" value="" placeholder="achternaam" class="edit validate[required]" /></div>
+	<div><span class="formText">E-mailadres</span><input type="text" id="email1" name="email1" value="" placeholder="E-mailadres" class="edit validate[required,custom[email]]" /></div>
+	<div><span class="formText">Telefoon</span><input type="text" id="phone" name="phone" value="" placeholder="Telefoonnummer" class="edit validate[custom[phone]] " /></div>
+	<div><span class="formText">Status</span><input class="fancy-checkbox" type="checkbox" name="state" id="state" value="active" checked/></div>	
+	<div class="buttons"><input type="button" class="close button" name="cancel" id="cancel" value="annuleren" /> <input type="submit" class="button send" name="storeUser" id="storeUser" value="opslaan" /></div>
+	
+</form> 

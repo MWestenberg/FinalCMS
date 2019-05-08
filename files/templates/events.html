@@ -1,0 +1,108 @@
+<div id="page" >
+	
+	<div id="banner" class="row editable" contenteditable="true">
+	    <img src="/images/frontend/eventsbanner.jpg" alt="" />
+	    
+	</div>
+	
+	<div class="basicContent">
+		<h1 id="h1" contenteditable="true">Listen, Learn, share</h1>
+		<p id="p1" class="editable pintro" contenteditable="true">
+			AWA organizes an array of global events particularly geared for the specialty paper, film, packaging, coating and converting sector.
+			Our event platforms are known for their in-depth market insights and peer-to-peer networking.  		
+		</p>
+	</div>
+	<div class="fullContent featureBox">
+		<div class="row basicContent">
+			<div class="row"><h2  id="s1" contenteditable="true">Events we organize</h2></div>
+			<div class="row boxContainer">
+				
+				<div id="box1" class="third boxFill">
+					<div  class="boxContent editable" contenteditable="true" id="b1">
+						<img src="/images/frontend/lessenaar.png" width="66" height="98" />
+						<h3 id="h7">International Conferences</h3>
+					</div>
+					<div class="toBottom">
+						<a class="btn readmore" href="#readmore1">Read more</a>
+					</div>
+				</div>
+				<div id="box3" class="third boxFill">
+					<div class="boxContent editable" contenteditable="true" id="b2">
+						<img src="/images/frontend/lessenaar.png" width="66" height="98" />
+						<h3 id="h9">Seminars</h3>
+					</div>
+					<div class="toBottom">
+						<a class="btn readmore" href="#readmore2">Read more</a>
+					</div>
+				</div>
+				<div id="box4" class="third boxFill">
+					<div class="boxContent editable" contenteditable="true" id="b3">
+						<img src="/images/frontend/lessenaar.png" width="66" height="98" />
+						<h3 id="h10">Workshops</h3>
+					</div>
+					<div class="toBottom">
+						<a class="btn readmore" href="#readmore3">Read more</a>
+					</div>
+				</div>
+				
+			</div>
+			
+		
+	</div>
+	
+	<div class="fullContent ">
+		<div id="readmore1" class="row dropBlock">
+				<div class="boxCross"><a href="#box1"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+				<div class="dropBlockContent">
+					<h1 class="white" contenteditable="true" id="h11">International Conferences</h1>
+					<p id="p10" class="offwhite" contenteditable="true">We organize multiple international conferences per year, across the globe. Several conferences are hosted annually; all conferences highlight a broad selection of current topics, trends and developments in a specific sector.
+					Line-ups with expert speakers, keynote presentations, product developments, Q & A sessions, and panel discussions. Excellent networking opportunities.
+					</p>
+					
+				</div>
+			</div>
+			<div id="readmore2"  class="row dropBlock">
+				<div class="boxCross"><a href="#box3"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+				<div class="dropBlockContent">
+					<h1 class="white" id="h13" contenteditable="true">Seminars</h1>
+					<p id="p12" class="offwhite" contenteditable="true">Our seminars bring together experts in their respective disciplines for sessions about specific industry issues. 
+					They feature interactive brainstorming, information sharing between peers and in-depth discussions, facilitated by an industry expert. AWA seminars are timely and offer like-minded excellent opportunities to collectively and openly share thoughts, opinions and concerns. Practical problems are underlined and the more intimate format encourages members to actively participate, exchange ideas, and raise questions and initiate debates. 
+					</p>
+					
+				</div>
+			
+			</div>
+			<div id="readmore3"  class="row dropBlock">
+				<div class="boxCross"><a href="#box4"><img src="/images/frontend/cross.png" width="40" height="40" alt="X" /></a></div>
+				<div class="dropBlockContent">
+					<h1 class="white" id="h14" contenteditable="true">Workshops</h1>
+					<p id="p14" class="offwhite" contenteditable="true">Our workshops feature intensive educational programs for those in need of in depth knowledge and training on a specific subject. They are led by industry experts who put an emphasis on interactive learning, exchanging ideas, information sharing and demonstrating the application of techniques and skills relating to the subject. 
+					Our workshops can be hosted on site, so that participants can see the techniques and processes they learn about at hand.
+					Workshops are intended to enhance the skills and knowledge of the participants on a particular subject matter, resulting in a better understanding of the business and becoming a (more) productive member of the organization.
+					</p>
+					
+				</div>
+			
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="basicContent margin-top-100">
+		<h2>Calendar of events</h2>
+	</div>
+	<div class="row margin-top-30">			
+		<php>openView.getLastTenEvents('eventitem.html',20)</php>		
+	</div>
+	<div class="basicContent ">
+		<h2 >Previous events</h2>
+	</div>
+	<div class="row  margin-top-30">
+		<php>openView.getLastTenEvents('recent-eventitem.html',12,'past')</php>		
+	</div>
+
+</div>
+
+	
+	
+	

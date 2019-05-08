@@ -1,0 +1,175 @@
+body {
+	
+}
+
+
+/*
+* fancy checkbox
+*/
+
+
+.loginform, .resetform {
+	width: 534px;
+	height: 400px;
+	position: relative;
+	left: 50%;
+	z-index: 1;
+	margin: 100px 0 0 -267px;
+	background: #F9F9F9;
+	border: 1px solid #efefef;
+	/* -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; */
+
+}
+
+/*inputfield-username*/
+
+.loginform .content, .resetform .content {
+	position: absolute;
+	top: 40px;
+	left: 60px;
+
+}
+
+
+
+
+.loginform input[type="text"], .loginform input[type="password"],
+.resetform input[type="text"], .resetform input[type="password"]
+  {
+	margin-top: 15px;
+	border: 0px solid #FFFFFF;
+	margin-left:55px;
+	width: 348px;
+	background: none;
+	font-size: 1em;
+	background: transparent;
+
+}
+
+.popje {width: 404px;height: 45px;background:  url('../images/inputfield-username.png') no-repeat top left;background-position: 0px 0px;}
+.slotje {width: 404px;height: 45px;background:  url('../images/inputfield-password.png') no-repeat top left;background-position: 0px 0px;}
+.email {width: 404px;height: 45px;background:  url('../images/inputfield-email.png') no-repeat top left;background-position: 0px 0px;}
+.code {width: 404px;height: 45px;background:  url('../images/inputfield-captcha.png') no-repeat top left;background-position: 0px 0px;}
+
+.inputbg.selected {background-position: 0px -45px !important;}
+ 
+.inlogFormButtons {
+	position: absolute;
+	top: 180px;
+	left: 0px;
+	width: 404px;
+}
+.remember {
+	position: absolute;
+	left: 50px;
+}
+.sendButton,.sendButton2, .sendButton3 {
+	position: absolute;
+	right: 0;
+
+	
+}
+.sendButton2 {
+	top: 100px;
+}
+.sendButton3 {
+	top: 100px;
+}
+.passwordReset, .passwordReset2 {
+	position: absolute;
+	left: 0px;
+	top: 125px;
+}
+.passwordReset2 {
+	top:  100px !important;
+}
+.captcha {
+	position: relative;
+	left: 0px;
+	height: 45px;
+	margin-bottom: 10px;
+	
+}
+
+
+#infoscreen {
+	width: 0px;
+	height: 330px;
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+	top: -10px;
+	margin-left: 240px;
+	background: #F9F9F9 url('../images/sliderfield.png') top left no-repeat;
+
+}
+
+#infoscreen P {
+	display: none;
+	margin: 25px 20px 20px 20px;
+	font-family: 'ProximaNova-Semibold';
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+
+
+.infoDiv {
+	position: absolute;
+	top: 325px;
+	left: 190px;
+}
+
+.button {
+	background: url('../images/button.png') top left repeat-x;
+	border: 0;
+	background-position: 0px 0px;
+	height: 40px;
+	width: 181px;
+	color: #000000;
+}
+.aanmeldbutton {
+	background: url('../images/button-aanmelden.png') top left repeat-x;
+	border: 0;
+	background-position: 0px 0px;
+	height: 40px;
+	width: 133px;
+	color: #000000;
+	
+}
+.button.selected, .aanmeldbutton.selected {background-position: 0px -40px;color: #FFFFFF;}
+
+
+@media all and (-webkit-min-device-pixel-ratio: 2.0) {
+  .toggle {background-image: url('../images/toggle@2x.png');background-size: 43px 40px; width:43px;height:20px; }
+  .loginform, .resetform {	background: #F9F9F9 url('../images/bg-loginwindow@2x.png') top left no-repeat;background-size: 534px 400px; }
+  .popje {width: 404px;height: 45px;background:  url('../images/inputfield-username@2x.png') no-repeat left top;background-size: 404px 90px;  }
+  .slotje {width: 404px;height: 45px;background:  url('../images/inputfield-password@2x.png') no-repeat left top;background-size: 404px 90px;}
+   .email {width: 404px;height: 45px;background:  url('../images/inputfield-email@2x.png') no-repeat left top;background-size: 404px 90px;}
+  #infoscreen {width: 0px;height: 330px;background: #F9F9F9 url('../images/sliderfield@2x.png') top left no-repeat; }
+  .button {background: url('../images/button@2x.png') top left repeat-x;height: 40px;width: 181px;background-position: 0px 0px;background-size: 181px 80px;}
+  .aanmeldbutton {background: url('../images/button-aanmelden@2x.png') top left repeat-x;height: 40px;width: 133px;background-position: 0px 0px;background-size: 133px 80px;}
+  .button.selected,aanmeldbutton.selected {background-position: 0px -40px;color: #FFFFFF;}
+}
+
+.row {
+	width: 100%s;
+	position: relative;	
+}
+.left {
+	width: 60%;
+	position: absolute;
+	left: 0;
+}
+
+.right {
+	width: 38%;	
+	position: absolute;
+	right: 0;
+}
+
+.row {
+	width: 100%;
+	position: relative;
+	
+}

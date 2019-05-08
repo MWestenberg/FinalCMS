@@ -1,0 +1,23 @@
+<!-- 
+
+This is only loaded for viewing purposes within the cms system 
+For example here you can add a menu to show the user how it looks like while editing.
+This menu must still be implemented within the public template
+
+//-->
+<script src="/js/custom.jquery.js" type="text/javascript" charset="utf-8"></script>
+<div id="frontEndMenu">
+	<div class="awalogo"><img src="/images/frontend/logo.png" width="184" height="63" align="left" /></div>
+	<ul>
+		<php>openView.frontMenu(includes/menu.html)</php>
+		<li><a class="frontEndItem" href="#">AWAccess&trade;</a></li>
+	</ul>
+</div>
+
+<!-- content //-->
+%s
+<!-- end content //-->
+<div id="footer">Copyright &copy; AWA Alexander Watson Associates BV  <php>openView.getCurrentYear()</php>. All rights reserved. <a href="/disclaimer">Terms of use.</a></div>
+<div id="nocart"></div>
+
+

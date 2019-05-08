@@ -1,0 +1,89 @@
+		<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+		<div class="pageMargin">
+		
+			<div>
+				
+				<h1>Edit a report</h1>
+				<p>Attach a preview by uploading it via the file manager in the subfolder report-previews.</p>
+			</div> 
+			
+			<div class="itemBtnGroup">
+				<p><img id="thumb" src="/images/frontend/document-icon.png" height="200" align="left" style="height: 200px!important;" /></p>
+				<p>&nbsp;</p>
+				 <p><a href="#" class="btn refreshThumb" id="refreshThumb">render</a></p>
+			</div>
+			
+			<form id="reportForm" title="Saving your report" class="forms columnar cmsForm">
+			<input type="hidden" name="reportid" id="reportid" value="" />
+			<ul>
+	
+			   	<li class="section-title"><h3>New report</h3></li>
+			   	<li>
+			   	    <fieldset>
+			   	    	<section><label for="cms_template">Report category <span class="req">*</span></label></section>
+			   	    	<select id="report_category" name="report_category" class="width-300px edit validate[required]" >
+			   	    		<option value="">Choose a category</option>
+			   	    		<option value="market-studies">Market studies</option>
+			   	    		<option value="market-updates">Market updates</option>
+			   	    		<option value="awareness-reports">Awareness Reports</option>
+			   	    	</select>
+			   		</fieldset>
+			   	</li>
+			   	<li>
+			   	    <label for="name">Report title<span class="req">*</span></label>
+			   	    <input type="text" name="report_title" id="report_title" class="width-300px edit validate[required]" value="" placeholder="The full title of this report" />
+			   	</li>
+			   	<li>
+			   	    <fieldset>
+			   	   	 <section><label for="description">Description<span class="req">*</span></label></section>
+			   	   	 <textarea name="description" id="description" style="min-height: 200px;" placeholder="Report description" class="width-300px edit validate[required]"></textarea> 
+			   		</fieldset>
+			   	</li>
+			   	<li>
+			   	    <fieldset>
+			   	   	 <section><label for="keywords">Keywords<span class="req">*</span></label></section>
+			   	   	 <textarea name="keywords" id="keywords"  style="min-height: 100px;" placeholder="Keywords (comma separated)" class="width-300px edit validate[required]"></textarea> 
+			   		</fieldset>
+			   	</li>
+			   	<li>
+			   	    <label for="name">Sale Price (USD)<span class="req">*</span></label>
+			   	    <input type="text" name="price" id="price" class="width-300px edit validate[required,custom[number]]" value="" placeholder="The price of this report in USD" />
+			   	</li>
+			   	<li>
+			   	    <label for="name">Sale Price (EURO)<span class="req">*</span></label>
+			   	    <input type="text" name="price_euro" id="price_euro" class="width-300px edit validate[required,custom[number]]" value="" placeholder="The price of this report in Euro" />
+			   	</li>
+			   	<li>
+			   	    <fieldset>
+			   	    	<section><label for="cms_template">Preview document <span class="req">*</span></label></section>
+			   	    	<select id="preview_file" name="preview_file" class="width-300px edit validate[required]" >
+			   	    		<option value="">Choose a preview file</option>
+			   	    		<php>openView.getPreviewReport()</php>
+			   	    	</select>
+			   		</fieldset>
+			   	</li>
+			   	<li  class="section-title"><h3>Publication properties</h3></li>
+			   		<li>
+			   	   <fieldset>
+			   	   <section><label for="state">Visible <span class="req">*</span></label></section>
+			   	    	<div class="checkbox width-300px"><input type="checkbox" id="state" name="state" checked /></div>
+			   		</fieldset>
+			   	</li>
+			   	<li>
+			   		<label for="publish_date">Publish date <span class="req">*</span></label>
+			   		<input type="text" name="publish_date" id="publish_date" class="width-300px edit validate[required,custom[dateFormat]]"] placeholder="Publish date" /> 
+			   	</li>
+			   
+			   	<li class="margin-top-50">
+			   		<fieldset><a href="" class="btn send" id="save-report">Save</a>  <a href="" id="remove-report" class="btn send removeBtn">Remove</a></fieldset>
+			   	</li>
+			   	
+			</ul>
+			</form>
+		</div>
+
+<script>
+	$(document).ready( function() { 
+		$('#publish_date').datepicker({dateFormat: "yy-mm-dd"}); 
+	});
+</script>

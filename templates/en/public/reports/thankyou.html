@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta HTTP-EQUIV="pragma" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="cache-control" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Shop</title>
+	<tpl>jquery</tpl>
+	<script src="/js/custom.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>validation</tpl>
+	
+	<link rel="stylesheet" href="/css/retina.css" type="text/css" />
+	<link rel="stylesheet" href="/css/kube-front.css" type="text/css" />
+	<link rel="stylesheet" href="/css/finalcms-general.css" type="text/css" />
+	
+	
+	<link rel="stylesheet" media="all and (min-width: 901px)" href="/css/finalcms-grid1001.css">
+	<link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 900px)" href="/css/finalcms-grid768.css">
+	<link rel="stylesheet" media="all and (max-width: 767px)" href="/css/finalcms-grid300-web.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/finalcms-grid1001.css">
+	<![endif]-->
+</head>
+<body>
+<div id="frontEndMenu">
+	<div class="awalogo"><img src="/images/frontend/logo.png" width="184" height="63" align="left" /></div>
+	<ul id="menuList">
+		<php>openView.frontMenu(includes/menu.html)</php>
+		<li><a class="frontEndItem" href="http://awaccess.awa-bv.com/?type=plain&c=login&t=auth">AWAccess&trade;</a></li>
+	</ul>
+	<div class="dropdownContainer">
+		<div class="moreDropdown">
+			<a class="more" >
+				<span>More</span>
+			</a>
+			<div class="submenu" style="display: none; ">
+				<ul id="submenuList" class="moreDropdownMenu"></ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div id="socialmedia">
+	<a href="https://twitter.com/AWA_Worldwide" target="_blank"><img src="/images/frontend/twitter.png" width="34" height="34" alt="tweet" /></a>
+	<a href="http://nl.linkedin.com/pub/awa-alexander-watson-associates/40/a99/4b7/" target="_blank"><img src="/images/frontend/linkedin.png" width="34" height="34" alt="link" /></a>
+</div>
+<div id="page" >
+	
+	<div class="row smallbanner"></div>
+
+	<div class="basicContent">
+			    <h2>Your order</h2>
+			    <fieldset>
+			   <div class="units-row">
+					<table id="shoppinglist" class="width-100 table-bordered table-container">
+						<thead class="thead-gray">
+							<tr>
+								<th>Report title</th>
+								<th>Price</th>
+			
+							</tr>
+						</thead>
+						<tbody>
+							<php>openView.viewShoppingCart('reports',true)</php>
+						</tbody>
+					</table>
+					
+			   </div>
+			   <div class="units-row">
+			       <div class="unit-50"><a href="/reports/report-shop" name="continueshop" id="continueshop" class="btn btn-gray">Back to reports</a></div>
+			   </div>
+			
+			   <div class="units-row">&nbsp; </div>
+		
+				</fieldset>
+		</div>
+	</div>
+	
+	
+</div>
+<div id="footer">Copyright &copy; AWA Alexander Watson Associates BV <php>openView.getCurrentYear()</php>. All rights reserved. <a href="/disclaimer">Terms of use.</a></div>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40150318-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

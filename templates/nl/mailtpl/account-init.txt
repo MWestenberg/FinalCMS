@@ -1,0 +1,16 @@
+Geachte <param1>,
+
+Er is een account voor u aangemaakt op <param2> met de volgende gebruikersnaam:
+
+<param1>
+
+U kunt een (nieuw) wachtwoord instellen door op de onderstaande link te klikken en de instructies op te volgen.
+
+<param3>
+
+Eenmaal ingelogd kunt uw wachtwoord onbeperkt wijzigen. Wij raden u aan dit eens per maand te doen.
+
+Bent u uw wachtwoord vergeten kunt deze via het inlogscherm opvragen. U krijgt dan een e-mail op dit e-mail adres met instructies. Dit kan slechts eenmaal per 24 uur.
+
+Met vriendelijke groet,
+<param5>

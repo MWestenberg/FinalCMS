@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Klantenbeheer</title>
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<tpl>style</tpl>
+</head>
+<body>
+<tpl>header</tpl>
+<tpl>securemenu</tpl>
+<div id="content" class="ui-corner-all">
+	<div id="mainfield-header" class="ui-corner-top">
+		<div id="wheelDiv"><img src="/images/shelf-wheel.png" class="wheel" width="120"/></div>
+		<h2>Klanten management</h2>
+		<div id="searchDiv"><tpl>liveSearch</tpl></div>
+	</div>
+	<div id="breadcrumbs-header">
+		<div id="breadcrumbs"></div>
+	</div>
+	<form id="detailEditor" title="Bezig met ophalen">
+	<div id="custCreateBut"><input type="button" class="editDialog button" name="createcustomer" id="createcustomer" value="Klant aanmaken" rel="createCustomer" /></div>
+	<div id="userCreateBut"><input type="button" class="editDialog button" name="createuser" id="" value="Gebruiker aanmaken" rel="createUser" /></div>
+	<table id="customerList" class="searchTable">
+		<thead>
+			<tr>
+				<th>Naam</th>
+				<th>Wijzigingsdatum</th>
+				<th>Wijzigen</th>
+			</tr>
+		</thead>
+		<tbody id="dirlist">
+			<tpl>getCustomerList</tpl>
+		</tbody>
+	</table>
+	</form>
+	<p>&nbsp;</p>
+</div>
+<div id="dialogWindow" class="accountbg"></div>
+</body>
+</html>

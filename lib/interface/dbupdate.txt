@@ -1,0 +1,4 @@
+UPDATE `event` SET regfee = '{"Standard fee":"'
+UPDATE `event` SET regfee = concat(regfee,price_euro) WHERE price_euro !=0
+UPDATE `event` SET regfee = concat(regfee,price) WHERE price !=0
+UPDATE `event` SET regfee = concat(regfee,'"}')

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title></title>
+	<tpl>jquery</tpl>
+	<tpl>validation</tpl>
+	<script src="/js/md5.js" type="text/javascript" charset="utf-8"></script>
+	<tpl>style</tpl>
+</head>
+<body>
+
+<div id="wrapper">
+		
+	<div id="lefthandMenu">
+	
+	
+		<div id="profileMenu">
+			
+			<div class="row">
+			    <div class="quarter"><img src="/images/finalcms/avatar.png" /></div>
+			   <div class="threequarter ">
+			   	<span class="offWhite big">Alexander Watson Associates</span><br/>
+			  	<span class="finalCMSMenu"><a href="/secure/account">Instellingen</a> // <a href="/signout" id="signout">afmelden</a></span>
+			   </div>
+			</div>
+			
+		</div>
+		<div class="smallMargin">
+			
+			<div class="row">
+				<div class="quarter"></div>
+				<div class="threequarter gray">
+					<div class="menuItem"><a href="/secure/start">start</a></div>
+					<tpl>getParentMenu</tpl>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<div id="main">
+		<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+		<div class="pageMargin">
+			<form id="accountForm" title="Bezig met verzenden"  class="forms columnar cmsForm">
+			<ul>
+				<li><h1>Account settings</h1></li>
+			   	<li>Manage your account settings</li>
+			   	<li class="section-title"><h3>Wachtwoord</h3></li>
+			   	<li>
+			   	    <label for="password1">New password<span class="req">*</span></label>
+			   	    <input type="password" id="password1" name="password1" placeholder="Nieuw wachtwoord" class="width-300px  edit validate[condRequired[password1],equals[password2]] " />
+			   	</li>
+			   	<li>
+			   	    <label for="password2">Confirm password<span class="req">*</span></label>
+			   	    <input type="password" id="password2" name="password2" placeholder="Bevestig wachtwoord" class="width-300px edit validate[condRequired[password2],equals[password1]]" />
+			   	</li>
+			   	<li class="section-title"><h3>Personalia</h3></li>				   	
+			   	<li>
+			   	    <label for="firstname">First name<span class="req">*</span></label>
+			   	   	<input type="text" id="firstname" name="firstname" value="<php>openView.getFirstName()</php>" placeholder="Voornaam" class="width-300px edit validate[required]" />
+			   	</li>
+			   	<li>
+			   	    <label for="lastname">Last name<span class="req">*</span></label>
+			   	   <input type="text" id="lastname" name="lastname" value="<php>openView.getLastName()</php>"  placeholder="Achternaam" class="width-300px edit validate[required]" />
+			   	</li>
+			   	<li>
+			   	    <label for="email">Email<span class="req">*</span></label>
+			   	    <input type="text" name="email" id="email" class="width-300px edit validate[required,custom[email]]" value="<php>openView.getEmail()</php>" placeholder="Your full name" />
+			   	</li>
+			   	<li>
+			   	    <label for="phone">Phone<span class="req">*</span></label>
+			   	    <input type="text" name="phone" id="phone" class="width-300px edit validate[required,custom[phone]]" value="<php>openView.getPhone()</php>" placeholder="Your full name" />
+			   	</li>
+			   	<li class="section-title"><h3>Wachtwoord</h3></li>
+			   	<li>
+			   		 <label for="password">Current password<span class="req">*</span></label>
+			   		<input type="password" name="password" id="password" value="" class="width-300px edit validate[required]" placeholder="vul uw huidige wachtwoord in" />
+			   	</li>
+			   	
+			   	
+			   	<li class="margin-top-50">
+			   		<fieldset><button class="btn send account" name="account" id="account" value="versturen" rel="account">opslaan</button></fieldset>
+			   	</li>
+			   	
+			</ul>
+			</form>
+		</div>
+		
+		
+	</div>
+</div>
+</body>
+</html>

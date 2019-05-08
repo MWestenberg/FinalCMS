@@ -1,0 +1,58 @@
+<!--include public style //-->
+<link rel="stylesheet" href="/css/finalcms-general.css" type="text/css" />
+<link rel="stylesheet" media="all and (min-width: 1001px)" href="/css/finalcms-grid1001.css">
+<link rel="stylesheet" media="all and (max-width: 1001px)" href="/css/finalcms-grid768.css">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" media="all" href="/css/finalcms-grid768.css">
+<![endif]-->
+<script>
+
+function createEditor( editorID, languageCode ) {
+	//if (editor) { editor.destroy(true); } 
+
+	// Replace the <textarea id="editor"> with an CKEditor
+	// instance, using default configurations.
+	return CKEDITOR.inline( editorID, {
+		language: languageCode,
+
+		on: {
+			instanceReady: function(event) {
+				var editor = event.editor,
+				element = editor.element;
+				/*
+				// Customize editors for headers and tag list.
+				// These editors don't need features like smileys, templates, iframes etc.
+				if ( element.is( 'h1', 'h2', 'h3' ) || element.getAttribute( 'id' ) == 'taglist' ) {
+					// Customize the editor configurations on "configLoaded" event,
+					// which is fired after the configuration file loading and
+					// execution. This makes it possible to change the
+					// configurations before the editor initialization takes place.
+					editor.on( 'configLoaded', function() {
+	
+						// Remove unnecessary plugins to make the editor simpler.
+						editor.config.removePlugins = 'colorbutton,find,flash,font,' +
+							'forms,iframe,image,newpage,removeformat,' +
+							'smiley,specialchar,stylescombo,templates';
+	
+						
+					});
+				}
+				*/
+			}
+		}
+	});
+}
+
+</script>
+<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+<div class="pageMargin">
+	<div class="row itemBtnGroup">
+	<a href="" class="btn saveContent">Opslaan</a> <a href="" class="btn gotoPage cancel">Annuleren</a> <a href="" class="btn resetContent">Reset naar Template</a>
+	</div>
+</div>
+<div class="editItemMargin margin-top-50">
+	<input type="hidden" id="itemID" name="itemID" value="" />
+	<php>openView.initEditor()</php>
+</div>
+
+<div  class="underMargin margin-top-50"></div>

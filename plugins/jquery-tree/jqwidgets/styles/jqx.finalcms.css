@@ -1,0 +1,49 @@
+.jqx-tree-finalcms {
+	width: 300px!important;
+	overflow-x: hidden;
+	display: block;
+	font-weight: normal;
+}
+
+
+.jqx-tree-dropdown-root-finalcms {
+	padding-right: 0;
+
+	width: 300px!important;
+	margin-left: 70px;
+	border: none;
+	overflow-x: hidden;
+}
+
+
+
+.jqx-tree-item-finalcms {
+	padding: 10px!important;
+	
+	overflow-x: hidden;
+}
+.jqx-tree-item-li-finalcms {
+	border: none!important;
+	
+	color: #DCDCDC;
+	
+}
+.jqx-widget-finalcms{border-color: #cacaca;
+}
+.jqx-fill-state-normal-finalcms, .jqx-widget-header-finalcms{ border-color: #FFFFFF; background-color:#4E7AC7;padding: 10px; }
+.jqx-fill-state-hover-finalcms, .jqx-scrollbar-thumb-state-normal-finalcms, .jqx-scrollbar-thumb-state-normal-horizontal-finalcms{ border-color:transparent;  background-color:#525252; color: #DCDCDC;padding: 10px; -moz-border-radius: 0;width: 100%;-webkit-border-radius: 0;border-radius: 0;}
+.jqx-fill-state-pressed-finalcms{border-color: transparent; background-color: #4E7AC7; color: #fff;padding: 10px;  -moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;width: 100%;}
+.jqx-fill-state-focus-finalcms { border-color: #555; }
+
+.jqx-scrollbar-state-normal-finalcms, .jqx-grid-bottomright-finalcms, .jqx-panel-bottomright-finalcms, .jqx-listbox-bottomright-finalcms{background-color: #434343;}
+.jqx-scrollbar-button-state-pressed, .jqx-scrollbar-button-state-hover{background-color: #434343; border-color: #222;}
+/*icons*/
+.jqx-menu-item-arrow-up-selected-finalcms, .icon-arrow-up-hover-finalcms, .icon-arrow-up-selected-finalcms{background-image:url('images/icon-up-white.png');background-repeat:no-repeat;background-position:center;}
+.jqx-menu-item-arrow-down-selected-finalcms, .icon-arrow-down-hover-finalcms, .icon-arrow-down-selected-finalcms{background-image:url('images/icon-down-white.png');background-repeat:no-repeat;background-position:center;}
+.jqx-menu-item-arrow-left-selected-finalcms, .icon-arrow-left-hover-finalcms, .icon-arrow-left-selected-finalcms{background-image:url('images/icon-left-white.png');background-repeat:no-repeat;background-position:center;}
+.jqx-menu-item-arrow-right-selected-finalcms, .icon-arrow-right-hover-finalcms, .icon-arrow-right-selected-finalcms{background-image:url('images/icon-right-white.png');background-repeat:no-repeat;background-position:center;}
+.jqx-tabs-close-button-hover-finalcms, .jqx-tabs-close-button-selected-finalcms{background-image:url(images/close_white.png);  background-repeat:no-repeat;  background-position:center;}
+.jqx-scrollbar-finalcms .icon-arrow-up-selected-finalcms, .jqx-scrollbar-finalcms .icon-arrow-up-hover-finalcms{background-image:url('images/icon-up.png'); background-repeat:no-repeat; background-position:center;}
+.jqx-scrollbar-finalcms .icon-arrow-down-selected-finalcms, .jqx-scrollbar-finalcms .icon-arrow-down-hover-finalcms{background-image:url('images/icon-down.png'); background-repeat:no-repeat; background-position:center;}
+.jqx-scrollbar-finalcms .icon-arrow-left-selected-finalcms, .jqx-scrollbar-finalcms .icon-arrow-left-hover-finalcms{background-image:url('images/icon-left.png'); background-repeat:no-repeat; background-position:center;}
+.jqx-scrollbar-finalcms .icon-arrow-right-selected-finalcms, .jqx-scrollbar-finalcms .icon-arrow-right-hover-finalcms{background-image:url('images/icon-right.png');background-repeat:no-repeat; background-position:center;}

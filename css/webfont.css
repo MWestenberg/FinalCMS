@@ -1,0 +1,17 @@
+@font-face {font-family: 'ProximaNova-Regular';src: url('webfonts/241356_10_0.eot');src: url('webfonts/241356_10_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_10_0.woff') format('woff'),url('webfonts/241356_10_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'ProximaNova-Light';src: url('webfonts/241356_13_0.eot');src: url('webfonts/241356_13_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_13_0.woff') format('woff'),url('webfonts/241356_13_0.ttf') format('truetype');}
+
+@font-face {font-family: 'ProximaNova-Semibold';src: url('webfonts/241356_11_0.eot');src: url('webfonts/241356_11_0.eot?#iefix') format('embedded-opentype'),url('webfonts/241356_11_0.woff') format('woff'),url('webfonts/241356_11_0.ttf') format('truetype');}
+/*
+ 
+.at2x(@path, @w: auto, @h: auto) {
+  background-image: url(@path);
+  @at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "@2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: url(@at2x_path);
+    background-size: @w @h;
+  }  
+}
+*/

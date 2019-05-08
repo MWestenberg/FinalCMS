@@ -1,0 +1,86 @@
+<!--include public style //-->
+<link rel="stylesheet" href="/css/finalcms-general.css" type="text/css" />
+<link rel="stylesheet" media="all and (min-width: 1001px)" href="/css/finalcms-grid1001.css">
+<link rel="stylesheet" media="all and (max-width: 1001px)" href="/css/finalcms-grid768.css">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" media="all" href="/css/finalcms-grid768.css">
+<![endif]-->
+<script>
+UPLOADCARE_PUBLIC_KEY = 'f1a436a489037de21b9a';
+
+
+
+function createEditor( editorID, languageCode ) {
+	CKEDITOR.disableAutoInline = true;
+
+	//if (editor) { editor.destroy(true); } 
+	if (CKEDITOR.instances[editorID])
+	{
+		CKEDITOR.instances[editorID].destroy(false);
+	}
+	// Replace the <textarea id="editor"> with an CKEditor
+	// instance, using default configurations.
+	return CKEDITOR.inline( editorID, {
+		language: languageCode,
+		on: {
+			blur: function(e) {
+		    //	 e.editor.destroy();
+			}
+			
+			
+		}
+		
+	});
+}
+
+
+
+
+
+</script>
+<style>
+/* Style a bit the inline editables. !!*/
+.cke_editable.cke_editable_inline, .ck_selectable
+{
+	cursor: pointer;
+}
+
+/* Once an editable element gets focused, the "cke_focus" class is
+   added to it, so we can style it differently. */
+.cke_editable.cke_editable_inline.cke_focus, .ck_selectable.cke_focus
+{
+	box-shadow: inset 0px 0px 20px 3px #ddd, inset 0 0 1px #000;
+	outline: none;
+	background: #F5F5F5;
+	cursor: text;
+}
+.ck_selectable.cke_focusdark
+{
+	box-shadow: inset 0px 0px 20px 3px #ddd, inset 0 0 1px #000;
+	outline: none;
+	background: #F5F5F5;
+	cursor: text;
+	color: #434343;
+}
+
+
+/* Avoid pre-formatted overflows inline editable. */
+.cke_editable_inline pre
+{
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+</style>
+<a href="#" id="closeMenu"><img src="/images/finalcms/hamburger.png" width="18" height="15" alt="|||" /></a>
+<div class="pageMargin">
+	<div class="row itemBtnGroup">
+	<a href="" class="btn saveContent">Save</a> <a href="" class="btn gotoPage cancel">cancel</a> <a href="" class="btn resetContent">Reset to Template</a>
+	</div>
+</div>
+<div class="editItemMargin margin-top-50">
+	<input type="hidden" id="itemID" name="itemID" value="" />
+	<php>openView.initEditor()</php>
+</div>
+
+<div  class="underMargin margin-top-50"></div>
